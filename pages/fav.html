@@ -1,0 +1,41 @@
+<h5 class= 'whitelist'>FOOD ITEMS YOU MAY LIKE:</h5>
+<!-- // form for elements -->
+<lable ng-repeat="list1 in lists1" class= 'whitelist'>
+    <input type="checkbox" name="chk[]" ng-model="lst1" value="{{list1.vl}}" ng-change="change1(lst1,list1.vl)">
+    {{list1.vl}} <br>
+    </lable>
+
+    <h5 class= 'whitelist'>FOOD ITEMS YOU DO NOT LIKE:</h5>
+    <!-- // form for elements -->
+    <lable ng-repeat="list2 in lists2" class= 'whitelist'>
+        <input type="checkbox" name="chk[]" ng-model="lst2" value="{{list2.vl}}" ng-change="change2(lst2,list2.vl)">
+        {{list2.vl}} <br>
+        </lable>
+
+        <!--- - - -MAIN PAGE STARTS HERE --------------------------------------------------------------------------------------------------------->
+
+
+            <div class="ui container">
+
+                  <!-- tell them about orderBy: 'cost' and multiple filters -->
+                  <div ng-repeat="restaurant in restaurants" class="restaurant">
+                    <div class="rest-wrapper-{{$index}}" >
+                         <div class="image">
+                             <img src="{{restaurant.image}}" height="100" width="100">
+                         </div>
+                          <h2 class='highlight-info'></h2>
+                   </div>
+                 <div class="rest-extra">
+                   <div class="type">
+                       <div class="bestDish" ng-if="restaurant.bestDish">
+                             <span>{{restaurant.bestDish.name}} </span>
+                             <div ng-click="getFav(restaurant.bestDish.image)" class="button">See If your Fav or not</div>
+                       </div>
+
+                   </div>
+
+                 </div>
+
+
+                </div>
+            </div>

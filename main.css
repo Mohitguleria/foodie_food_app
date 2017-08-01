@@ -1,0 +1,165 @@
+,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F3E8;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5FwVbEolUfjnpVtrr3fW8qnSqenGEUwTIId9f0DOV9EHx-zS1');
+    background-size: cover;
+}
+
+.hero {
+   background-image: url('https://www.solofoods.com/sites/default/files/assorted-cupcake-wallpaper.jpg');
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 4px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .navbar {
+    color: white;
+    background-color: rgba(255,0,0,0.5);
+}
+
+#app .navbar a {
+    color:white;
+}
+
+.hidden {
+    display: none;
+}
+
+#app .login {
+    background-color:rgba(255,0,0,0.5);
+    height: 105vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .login-form {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 2rem;
+    padding-top: 0;
+    border-radius: 4px;
+}
+.hero {
+    margin-bottom: 3rem;
+}
+
+.restaurant {
+    background-color: white;
+    position: relative;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.rest-wrapper {
+    display: flex;
+    font-family: calibri;
+}
+
+.rest-wrapper .image {
+    margin-right: 1rem;
+}
+
+.rest-wrapper .image img {
+    border-radius: 5px;
+}
+
+.rest-wrapper .rest-name {
+    font-size: 24px;
+    color: #cb202d;
+}
+
+.rest-wrapper .rest-category {
+    color: #89959B;
+    text-transform: uppercase;
+}
+
+.rest-wrapper .rest-address {
+    color: #89959B;
+}
+
+.rest-extra {
+    display: flex;
+    margin-top: 1rem;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem;
+}
+
+.rest-extra .type {
+    text-transform: uppercase;
+     color: #89959B;
+     flex: none;
+     margin-right: 2rem;
+}
+
+.restaurant .rating {
+    color: red;
+    background-color: yellow;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+
+.search-bar {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+.clickable
+{
+  cursor: pointer;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form .input-wrapper {
+   flex: 1;
+   margin-right: 1rem;
+}
+
+.bestDish .button {
+    display: inline-block;
+    background-color:#cb202d;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.list{
+  background-color:black;
+  width: 20%;
+  margin:10px auto;
+}
+
+
+.whitelist{
+color: white;
+}
